@@ -42,40 +42,19 @@
   .avatar.green { background: linear-gradient(135deg, #11998e, #38ef7d); }
   .info h2 { color: #fff; font-size: 1.1rem; font-weight: 600; }
   .info .role { color: #9b8ec4; font-size: 0.8rem; margin-top: 2px; }
-  .bio {
-    color: #b0b0cc;
-    font-size: 0.82rem;
-    line-height: 1.55;
-    margin-bottom: 16px;
-    padding-left: 4px;
-  }
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 16px;
-  }
-  .tag {
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.12);
-    color: #c0c0e0;
-    font-size: 0.72rem;
-    padding: 3px 10px;
-    border-radius: 20px;
-    letter-spacing: 0.3px;
-  }
+  .bio { color: #b0b0cc; font-size: 0.82rem; line-height: 1.55; margin-bottom: 16px; padding-left: 4px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .tag { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: #c0c0e0; font-size: 0.72rem; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.3px; }
   .links { display: flex; flex-direction: column; gap: 10px; }
-  .link-btn {
-    display: flex; align-items: center; gap: 12px;
-    padding: 11px 16px; border-radius: 12px;
-    text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: all 0.2s;
-  }
+  .link-btn { display: flex; align-items: center; gap: 12px; padding: 11px 16px; border-radius: 12px; text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: all 0.2s; }
   .link-btn.github { background: rgba(255,255,255,0.08); color: #e0e0e0; border: 1px solid rgba(255,255,255,0.12); }
   .link-btn.github:hover { background: rgba(255,255,255,0.15); color: #fff; }
   .link-btn.linkedin { background: rgba(10,102,194,0.2); color: #7ab8f5; border: 1px solid rgba(10,102,194,0.3); }
   .link-btn.linkedin:hover { background: rgba(10,102,194,0.35); color: #a8d0ff; }
   .link-btn.youtube { background: rgba(255,0,0,0.15); color: #ff7070; border: 1px solid rgba(255,0,0,0.3); }
   .link-btn.youtube:hover { background: rgba(255,0,0,0.3); color: #ffaaaa; }
+  .link-btn.external { background: rgba(255,255,255,0.06); color: #c8b8f0; border: 1px solid rgba(180,140,255,0.25); }
+  .link-btn.external:hover { background: rgba(180,140,255,0.15); color: #e0d0ff; }
   .link-btn i { font-size: 1rem; width: 20px; text-align: center; }
   .stat { color: #f0c060; font-weight: 600; }
 </style>
@@ -93,7 +72,7 @@
       <div class="role">CEO &bull; Founder of io.net &bull; Now at O.XYZ</div>
     </div>
   </div>
-  <p class="bio">Built <span class="stat">io.net</span> into the world&rsquo;s largest decentralized AI GPU network &mdash; scaling from a <span class="stat">$10M to $4.5B valuation in 14 months</span>, listed on Binance, aggregating tens of thousands of GPU nodes at up to 90% lower cost than AWS. Now investing <span class="stat">$130M</span> of personal capital into O.XYZ, the world&rsquo;s first decentralized AI-managed organization.</p>
+  <p class="bio">Built <span class="stat">io.net</span> into the world&rsquo;s largest decentralized AI GPU network &mdash; scaling to a <span class="stat">$4.5B valuation in 14 months</span>, listed on Binance, aggregating tens of thousands of GPU nodes at up to 90% lower cost than AWS. Now investing <span class="stat">$130M</span> of personal capital into O.XYZ, the world&rsquo;s first decentralized AI-managed organization.</p>
   <div class="tags">
     <span class="tag">Decentralized Compute</span>
     <span class="tag">AI Infrastructure</span>
@@ -149,6 +128,7 @@
   </div>
   <div class="links">
     <a class="link-btn linkedin" href="https://www.linkedin.com/in/raghimi/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn &mdash; raghimi</a>
+    <a class="link-btn external" href="https://dohaforum.org/2023/speakers/omid-raghimi" target="_blank"><i class="fas fa-globe"></i> Doha Forum &mdash; Speaker Profile</a>
   </div>
 </div>
 
