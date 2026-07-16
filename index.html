@@ -25,13 +25,13 @@
     border-radius: 20px;
     padding: 28px 32px;
     width: 100%;
-    max-width: 480px;
+    max-width: 520px;
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
     transition: transform 0.2s, box-shadow 0.2s;
   }
   .card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(100,80,200,0.3); }
-  .card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+  .card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
   .avatar {
     width: 56px; height: 56px; border-radius: 50%;
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -42,11 +42,33 @@
   .avatar.green { background: linear-gradient(135deg, #11998e, #38ef7d); }
   .info h2 { color: #fff; font-size: 1.1rem; font-weight: 600; }
   .info .role { color: #9b8ec4; font-size: 0.8rem; margin-top: 2px; }
+  .bio {
+    color: #b0b0cc;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    margin-bottom: 16px;
+    padding-left: 4px;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .tag {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #c0c0e0;
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+  }
   .links { display: flex; flex-direction: column; gap: 10px; }
   .link-btn {
     display: flex; align-items: center; gap: 12px;
-    padding: 12px 18px; border-radius: 12px;
-    text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.2s;
+    padding: 11px 16px; border-radius: 12px;
+    text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: all 0.2s;
   }
   .link-btn.github { background: rgba(255,255,255,0.08); color: #e0e0e0; border: 1px solid rgba(255,255,255,0.12); }
   .link-btn.github:hover { background: rgba(255,255,255,0.15); color: #fff; }
@@ -55,39 +77,80 @@
   .link-btn.youtube { background: rgba(255,0,0,0.15); color: #ff7070; border: 1px solid rgba(255,0,0,0.3); }
   .link-btn.youtube:hover { background: rgba(255,0,0,0.3); color: #ffaaaa; }
   .link-btn i { font-size: 1rem; width: 20px; text-align: center; }
+  .stat { color: #f0c060; font-weight: 600; }
 </style>
 </head>
 <body>
 <h1>Team Profiles</h1>
 <p class="subtitle">Leadership &amp; Founders</p>
+
+<!-- Ahmad Shadid -->
 <div class="card">
   <div class="card-header">
     <div class="avatar">AS</div>
-    <div class="info"><h2>Ahmad Shadid</h2><div class="role">CEO &bull; ex-io.net</div></div>
+    <div class="info">
+      <h2>Ahmad Shadid</h2>
+      <div class="role">CEO &bull; Founder of io.net &bull; Now at O.XYZ</div>
+    </div>
+  </div>
+  <p class="bio">Built <span class="stat">io.net</span> into the world&rsquo;s largest decentralized AI GPU network &mdash; scaling from a <span class="stat">$10M to $4.5B valuation in 14 months</span>, listed on Binance, aggregating tens of thousands of GPU nodes at up to 90% lower cost than AWS. Now investing <span class="stat">$130M</span> of personal capital into O.XYZ, the world&rsquo;s first decentralized AI-managed organization.</p>
+  <div class="tags">
+    <span class="tag">Decentralized Compute</span>
+    <span class="tag">AI Infrastructure</span>
+    <span class="tag">DePIN</span>
+    <span class="tag">Solana</span>
+    <span class="tag">$4.5B Exit</span>
   </div>
   <div class="links">
     <a class="link-btn github" href="https://github.com/ahmadshadid" target="_blank"><i class="fab fa-github"></i> GitHub &mdash; ahmadshadid</a>
     <a class="link-btn linkedin" href="https://www.linkedin.com/in/grayspark/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn &mdash; grayspark</a>
   </div>
 </div>
+
+<!-- Dr. Yaser Bishr -->
 <div class="card">
   <div class="card-header">
     <div class="avatar blue">YB</div>
-    <div class="info"><h2>Dr. Yaser Bishr</h2><div class="role">COO &bull; ex-Lockheed</div></div>
+    <div class="info">
+      <h2>Dr. Yaser Bishr</h2>
+      <div class="role">COO &bull; ex-Lockheed Martin Intelligence &bull; PhD, Duke</div>
+    </div>
+  </div>
+  <p class="bio">Director of Business Development &amp; Strategy at <span class="stat">Lockheed Martin IS&amp;GS Intelligence</span>, leading the transformation of its intelligence and cyber business with a <span class="stat">TS/SCI with CI Poly</span> security clearance. Holds a <span class="stat">PhD in Computer Science</span> and an MBA from Duke University. Formerly a Venture Partner at Rising Tide Fund (Silicon Valley), overseeing Web3, AI, and deep tech investments.</p>
+  <div class="tags">
+    <span class="tag">Intelligence &amp; Cyber</span>
+    <span class="tag">TS/SCI Cleared</span>
+    <span class="tag">AI Strategy</span>
+    <span class="tag">PhD Computer Science</span>
+    <span class="tag">Duke University</span>
   </div>
   <div class="links">
     <a class="link-btn linkedin" href="https://www.linkedin.com/in/yaserbishr/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn &mdash; yaserbishr</a>
     <a class="link-btn youtube" href="https://www.youtube.com/watch?v=Y1qv3aLsLWU" target="_blank"><i class="fab fa-youtube"></i> YouTube &mdash; Interview</a>
   </div>
 </div>
+
+<!-- Omid Raghimi -->
 <div class="card">
   <div class="card-header">
     <div class="avatar green">OR</div>
-    <div class="info"><h2>Omid Raghimi</h2><div class="role">CTO &bull; ex-Palantir</div></div>
+    <div class="info">
+      <h2>Omid Raghimi</h2>
+      <div class="role">CTO &bull; ex-Palantir &bull; ex-Crypto.com</div>
+    </div>
+  </div>
+  <p class="bio"><span class="stat">Global Head of Cybersecurity Practice &amp; Managing Director</span> at Palantir Technologies, advising governments and enterprises on cyber defence and threat intelligence. Previously <span class="stat">Head of Threat Intelligence &amp; Research at Crypto.com</span>. Over a decade leading cyber strategy across financial services and defence technology sectors.</p>
+  <div class="tags">
+    <span class="tag">Cybersecurity</span>
+    <span class="tag">Threat Intelligence</span>
+    <span class="tag">Palantir</span>
+    <span class="tag">Crypto.com</span>
+    <span class="tag">Defence Tech</span>
   </div>
   <div class="links">
     <a class="link-btn linkedin" href="https://www.linkedin.com/in/raghimi/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn &mdash; raghimi</a>
   </div>
 </div>
+
 </body>
 </html>
