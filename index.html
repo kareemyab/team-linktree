@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Profiles</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+  }
+  h1 { color: #fff; font-size: 1.4rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; opacity: 0.7; }
+  .subtitle { color: #a0a0c0; font-size: 0.85rem; margin-bottom: 40px; letter-spacing: 1px; }
+  .card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 28px 32px;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(100,80,200,0.3); }
+  .card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+  .avatar {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; font-weight: 700; color: #fff; flex-shrink: 0;
+  }
+  .avatar.blue { background: linear-gradient(135deg, #2193b0, #6dd5ed); }
+  .avatar.green { background: linear-gradient(135deg, #11998e, #38ef7d); }
+  .info h2 { color: #fff; font-size: 1.1rem; font-weight: 600; }
+  .info .role { color: #9b8ec4; font-size: 0.8rem; margin-top: 2px; }
+  .links { display: flex; flex-direction: column; gap: 10px; }
+  .link-btn {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 18px; border-radius: 12px;
+    text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.2s;
+  }
+  .link-btn.github { background: rgba(255,255,255,0.08); color: #e0e0e0; border: 1px solid rgba(255,255,255,0.12); }
+  .link-btn.github:hover { background: rgba(255,255,255,0.15); color: #fff; }
+  .link-btn.linkedin { background: rgba(10,102,194,0.2); color: #7ab8f5; border: 1px solid rgba(10,102,194,0.3); }
+  .link-btn.linkedin:hover { background: rgba(10,102,194,0.35); color: #a8d0ff; }
+  .link-btn i { font-size: 1rem; width: 20px; text-align: center; }
+</style>
+</head>
+<body>
+<h1>Team Profiles</h1>
+<p class="subtitle">Leadership &amp; Founders</p>
+<div class="card">
+  <div class="card-header">
+    <div class="avatar">AS</div>
+    <div class="info"><h2>Ahmad Shadid</h2><div class="role">CEO &bull; ex-io.net</div></div>
+  </div>
+  <div class="links">
+    <a class="link-btn github" href="https://github.com/ahmadshadid" target="_blank"><i class="fab fa-github"></i> GitHub &mdash; ahmadshadid</a>
+    <a class="link-btn linkedin" href="https://www.linkedin.com/in/grayspark/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn &mdash; grayspark</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <div class="avatar blue">YB</div>
+    <div class="info"><h2>Dr. Yaser Bishr</h2><div class="role">COO &bull; ex-Lockheed</div></div>
+  </div>
+  <div class="links">
+    <a class="link-btn linkedin" href="https://www.linkedin.com/in/yaserbishr/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn &mdash; yaserbishr</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <div class="avatar green">OR</div>
+    <div class="info"><h2>Omid Raghimi</h2><div class="role">CTO &bull; ex-Palantir</div></div>
+  </div>
+  <div class="links">
+    <a class="link-btn linkedin" href="https://www.linkedin.com/in/raghimi/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn &mdash; raghimi</a>
+  </div>
+</div>
+</body>
+</html>
